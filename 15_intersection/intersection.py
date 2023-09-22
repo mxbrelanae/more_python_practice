@@ -13,3 +13,7 @@ def intersection(l1, l2):
         >>> intersection([1, 2, 3], [4, 5, 6])
         []
     """
+
+    joined = set(l2)
+
+    return [new for new in l1 if new in joined]
